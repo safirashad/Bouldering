@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+body {
+
+    background-image: url(../images/paisley.webp);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    font-family: sans-serif;
+   
+}
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* text-align: center; */
+
+}
+.primary-navigation ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0%;
+  
+}
+.primary-navigation a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.primary-navigation a:hover {
+    color: #5f9b9f;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-family: sans-serif; 
+  text-align: center;
+  line-height: 1.1;
+
+  @media (width > 720px){
+    font-size: 7.5rem;
+  }
+
+}
+
+section {
+    margin-block: 100px;
+}
+.wrapper {
+    max-inline-size: 1000px;
+    margin-inline: auto;
+}
+.tow-column-layout {
+    display: grid;
+    gap: 60px;
+    margin: 60px;
+    /* @media (min width: 720px) disse was the orginal syntex */
+
+    @media (width > 720px) {
+        grid-template-columns: 1fr 1fr;
+    }
+   
+
+}
+
+.teal-bg {
+
+    background-color: #087a98;
+    border: solid #0b4a5a 5px;
+    padding: 20px;
+    color: #fff;
+}
+
+
+ .teal-text {
+
+    color: #087a98;
+}
+.teal-bg strong{
+
+    color: yellowgreen;
+}
+h2 {
+    color: #cb721c;
+    font-size: 2.5rem;
+
+    /* inline use for how big well the box */
+    
+
+}
+
+
+h3 {
+    
+    font-size: 1.5rem;
+    
+}
+
+footer {
+    
+    text-align: center;
+}  
+
+img {
+    display:block;
+    max-inline-size: 100%;
+    padding-bottom:30px;
+    
+	border-radius:30px;
+   
+    
+    /* you can use for border all value same line boder: 20px green dotted or solid */
+    /* or you can write boder-inline end or start */
+}
+
+a {
+    color: red;
+}
+
+a:hover,
+a:focus-visible {
+    color: green;
+}
+
+a:active {
+    color: black
+}
+ul {
+    /* list-style:lower-alpha; */
+    list-style-position:outside;
+}
+
+li {
+    
+    margin-block: 5px;
+
+}
+
+
+ol {
+    color: green;
+    list-style-position:inside;
+    /* text-align:center; */
+}
+
+.climber-bg{
+    color: #fff;
+    background-image: url("../images/simple-steps.jpg");
+    padding: 24px;
+    border: solid #0b4a5a 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
